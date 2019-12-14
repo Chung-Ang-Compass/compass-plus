@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuideRegisterActivity">
+
+
+    <ProgressBar
+        android:id="@+id/register_progress"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="가이드 등록"
+            android:textSize="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:id="@+id/country_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전담 나라"
+            android:textSize="17dp"
+            android:layout_below="@id/title_tv"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="50dp"/>
+
+        <Spinner
+            android:id="@+id/country_select_spinner"
+            android:layout_width="113dp"
+            android:layout_height="36dp"
+            android:layout_toRightOf="@id/city_tv"
+            android:layout_below="@id/title_tv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/city_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전담 도시"
+            android:textSize="17dp"
+            android:layout_below="@id/country_tv"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="50dp"/>
+
+        <Spinner
+            android:id="@+id/city_select_spinner"
+            android:layout_width="113dp"
+            android:layout_height="36dp"
+            android:layout_toRightOf="@id/city_tv"
+            android:layout_below="@id/country_tv"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_alignRight="@id/country_select_spinner"/>
+
+        <TextView
+            android:id="@+id/theme_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="테마"
+            android:textSize="17dp"
+            android:layout_below="@id/city_tv"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="50dp"/>
+
+        <Spinner
+            android:id="@+id/theme_select_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_toRightOf="@id/theme_tv"
+            android:layout_below="@id/city_tv"
+            android:layout_alignLeft="@id/city_select_spinner"
+            android:layout_marginTop="30dp"/>
+
+        <Button
+            android:id="@+id/register_guide"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/theme_select_spinner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="등록" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

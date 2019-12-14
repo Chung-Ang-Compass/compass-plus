@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="country">
+        <item>한국</item>
+        <item>중국</item>
+        <item>미국</item>
+        <item>프랑스</item>
+    </string-array>
+
+    <string-array name="kor_city">
+        <item>경기도</item>
+        <item>강원도</item>
+        <item>서울</item>
+        <item>대구</item>
+        <item>부산</item>
+        <item>대전</item>
+        <item>광주</item>
+        <item>울산</item>
+    </string-array>
+
+    <string-array name="usa_city">
+        <item>NY</item>
+        <item>LA</item>
+        <item>ORL</item>
+        <item>LAS</item>
+        <item>CHI</item>
+        <item>WA</item>
+    </string-array>
+
+    <string-array name="theme">
+        <item>경험 추구 여행자</item>
+        <item>모험 추구 여행자</item>
+        <item>안정 추구 여행자</item>
+        <item>감각 추구 여행자</item>
+    </string-array>
+
+</resources>
